@@ -1,0 +1,10 @@
+c:\users\asa\documents\visual studio 2015\Projects\Server\Server\bin\Debug\Server.exe.config
+c:\users\asa\documents\visual studio 2015\Projects\Server\Server\bin\Debug\Server.exe
+c:\users\asa\documents\visual studio 2015\Projects\Server\Server\bin\Debug\Server.pdb
+c:\users\asa\documents\visual studio 2015\Projects\Server\Server\bin\Debug\EntityFramework.dll
+c:\users\asa\documents\visual studio 2015\Projects\Server\Server\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\asa\documents\visual studio 2015\Projects\Server\Server\bin\Debug\EntityFramework.xml
+c:\users\asa\documents\visual studio 2015\Projects\Server\Server\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\asa\documents\visual studio 2015\Projects\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+c:\users\asa\documents\visual studio 2015\Projects\Server\Server\obj\Debug\Server.exe
+c:\users\asa\documents\visual studio 2015\Projects\Server\Server\obj\Debug\Server.pdb

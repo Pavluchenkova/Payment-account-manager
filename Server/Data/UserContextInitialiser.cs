@@ -53,7 +53,7 @@ namespace Server.Data
             User user4 = new User
             {
                 UserId = Guid.NewGuid(),
-                AccountNumber = 323456,
+                AccountNumber = 423456,
                 Balance = 100000m,
                 CreationDate = new DateTime(2000, 12, 1),
                 IncomeDate = new DateTime(2017, 1, 12),

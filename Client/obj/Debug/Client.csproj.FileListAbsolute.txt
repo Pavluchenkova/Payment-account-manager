@@ -1,0 +1,9 @@
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Client\bin\Debug\Client.exe.config
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Client\bin\Debug\Client.exe
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Client\bin\Debug\Client.pdb
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Client\obj\Debug\Client.exe
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Client\obj\Debug\Client.pdb
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Client\obj\Debug\Client.Form1.resources

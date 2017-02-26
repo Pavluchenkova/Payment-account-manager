@@ -20,5 +20,9 @@ namespace Server
         public string Notes { get; set; }
 
         public IList<UserHistory> UserHistories { get; set; }
+        public User()
+        {
+            UserHistories = new List<UserHistory>();
+        }
     }
 }

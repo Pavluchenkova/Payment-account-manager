@@ -43,6 +43,7 @@
             this.labelPhone = new System.Windows.Forms.Label();
             this.labelNotes = new System.Windows.Forms.Label();
             this.labelModificationdate = new System.Windows.Forms.Label();
+            this.SaveChanges = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AccountNumber
@@ -64,7 +65,7 @@
             // SearchByAccountNumber
             // 
             this.SearchByAccountNumber.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.SearchByAccountNumber.Location = new System.Drawing.Point(180, 39);
+            this.SearchByAccountNumber.Location = new System.Drawing.Point(180, 47);
             this.SearchByAccountNumber.Name = "SearchByAccountNumber";
             this.SearchByAccountNumber.Size = new System.Drawing.Size(75, 23);
             this.SearchByAccountNumber.TabIndex = 2;
@@ -90,6 +91,7 @@
             // 
             this.ValidationDate.Location = new System.Drawing.Point(133, 153);
             this.ValidationDate.Name = "ValidationDate";
+            this.ValidationDate.ReadOnly = true;
             this.ValidationDate.Size = new System.Drawing.Size(122, 20);
             this.ValidationDate.TabIndex = 6;
             // 
@@ -111,6 +113,7 @@
             // 
             this.ModificationDate.Location = new System.Drawing.Point(134, 229);
             this.ModificationDate.Name = "ModificationDate";
+            this.ModificationDate.ReadOnly = true;
             this.ModificationDate.Size = new System.Drawing.Size(122, 20);
             this.ModificationDate.TabIndex = 9;
             // 
@@ -168,11 +171,23 @@
             this.labelModificationdate.TabIndex = 15;
             this.labelModificationdate.Text = "Modificated ";
             // 
+            // SaveChanges
+            // 
+            this.SaveChanges.Enabled = false;
+            this.SaveChanges.Location = new System.Drawing.Point(179, 270);
+            this.SaveChanges.Name = "SaveChanges";
+            this.SaveChanges.Size = new System.Drawing.Size(75, 23);
+            this.SaveChanges.TabIndex = 16;
+            this.SaveChanges.Text = "Save";
+            this.SaveChanges.UseVisualStyleBackColor = true;
+            this.SaveChanges.Click += new System.EventHandler(this.SaveChanges_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(313, 311);
+            this.Controls.Add(this.SaveChanges);
             this.Controls.Add(this.labelModificationdate);
             this.Controls.Add(this.labelNotes);
             this.Controls.Add(this.labelPhone);
@@ -212,6 +227,7 @@
         private System.Windows.Forms.Label labelPhone;
         private System.Windows.Forms.Label labelNotes;
         private System.Windows.Forms.Label labelModificationdate;
+        private System.Windows.Forms.Button SaveChanges;
     }
 }
 

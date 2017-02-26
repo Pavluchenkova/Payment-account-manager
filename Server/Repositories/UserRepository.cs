@@ -12,13 +12,19 @@ namespace Server.Repositories
     {
         private readonly UserContext _dbContext;
 
-        public UserRepository(UserContext dbContext)
+        public UserRepository()
         {
-            _dbContext = dbContext;
+            _dbContext = new UserContext();
         }
         public User GetByAccountNumber(int accountNumber)
         {
             var entity = _dbContext.Set<User>().FirstOrDefault(e => e.AccountNumber == accountNumber);
+
+            return entity;
+        }
+        public User GetById(Guid userId)
+        {
+            var entity = _dbContext.Set<User>().FirstOrDefault(e => e.UserId == userId);
 
             return entity;
         }

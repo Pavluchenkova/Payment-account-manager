@@ -8,3 +8,13 @@ c:\users\asa\documents\visual studio 2015\Projects\Server\Server\bin\Debug\Entit
 c:\users\asa\documents\visual studio 2015\Projects\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
 c:\users\asa\documents\visual studio 2015\Projects\Server\Server\obj\Debug\Server.exe
 c:\users\asa\documents\visual studio 2015\Projects\Server\Server\obj\Debug\Server.pdb
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\bin\Debug\Server.exe.config
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\obj\Debug\Server.exe
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\obj\Debug\Server.pdb
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\bin\Debug\Server.exe
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\bin\Debug\Server.pdb
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\bin\Debug\EntityFramework.dll
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\bin\Debug\EntityFramework.xml
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache

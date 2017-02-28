@@ -1,0 +1,5 @@
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\MonthlyFeeTask\bin\Debug\MonthlyFeeTask.exe.config
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\MonthlyFeeTask\bin\Debug\MonthlyFeeTask.exe
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\MonthlyFeeTask\bin\Debug\MonthlyFeeTask.pdb
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\MonthlyFeeTask\obj\Debug\MonthlyFeeTask.exe
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\MonthlyFeeTask\obj\Debug\MonthlyFeeTask.pdb

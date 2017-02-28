@@ -1,17 +1,14 @@
-﻿using Server.AccountService;
-using Server.Interfaces;
+﻿using Server.Interfaces;
 using Server.Repositories;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Server.AccountService
 {
     public class AccountService : IAccountService
     {
-        private readonly UserRepository _userRpository;
+        private readonly UserRepository _userRpository;   
+        private  readonly decimal _withdrawal = 15;
 
         public AccountService()
         {
@@ -33,6 +30,7 @@ namespace Server.AccountService
                 CreationDate = user.CreationDate,
                 IncomeDate = user.IncomeDate,
                 ModificationDate = user.ModificationDate,
+                MonthlyFeeDate = user.MonthlyFeeDate,
                 Name = user.Name,
                 Notes = user.Notes,
                 Phone = user.Phone,
@@ -56,6 +54,21 @@ namespace Server.AccountService
             user.Notes = userDto.Notes;
 
             _userRpository.Update(user);
+        }
+
+        public void MonthlyFee()
+        {
+            IEnumerable<User> selectedUsers = _userRpository.GetUsersForMonthlyFee();
+            foreach (var user in selectedUsers)
+            {
+
+                if (user.Balance > 0)
+                {
+                    user.Balance -= _withdrawal;
+                    user.MonthlyFeeDate = user.MonthlyFeeDate.AddMonths(1);
+                }
+                _userRpository.Update(user);
+            }
         }
 
     }

@@ -29,6 +29,8 @@ namespace Server.AccountService
         [DataMember]
         public DateTime IncomeDate { get; set; }
         [DataMember]
+        public DateTime MonthlyFeeDate { get; set; }
+        [DataMember]
         public string Notes { get; set; }
     }
 }

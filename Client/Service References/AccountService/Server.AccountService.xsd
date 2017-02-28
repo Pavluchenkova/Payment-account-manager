@@ -8,6 +8,7 @@
       <xs:element minOccurs="0" name="CreationDate" type="xs:dateTime" />
       <xs:element minOccurs="0" name="IncomeDate" type="xs:dateTime" />
       <xs:element minOccurs="0" name="ModificationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MonthlyFeeDate" type="xs:dateTime" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />

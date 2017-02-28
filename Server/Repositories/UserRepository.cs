@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Server.Repositories
 {
@@ -28,6 +25,12 @@ namespace Server.Repositories
 
             return entity;
         }
+        public IEnumerable<User> GetUsersForMonthlyFee()
+        {
+            var currentDay = DateTime.Now;
+
+            return _dbContext.Set<User>().Where(e => (e.MonthlyFeeDate <= currentDay)).ToList();
+        }
 
         public void Update(User entity)
         {
@@ -42,6 +45,7 @@ namespace Server.Repositories
                 AccountNumber = entity.AccountNumber,
                 CreationDate = entity.CreationDate,
                 ModificationDate = entity.ModificationDate,
+                MonthlyFeeDate = entity.MonthlyFeeDate,
                 ValidTillDate = entity.ValidTillDate,
                 IncomeDate = entity.IncomeDate,
                 Notes = entity.Notes,

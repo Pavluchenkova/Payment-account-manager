@@ -18,3 +18,6 @@ C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\bin\Debug\EntityFra
 C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\bin\Debug\EntityFramework.xml
 C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\obj\Debug\Server.Migrations.InitialCreate.resources
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+C:\Users\ASA\Documents\GitHub\Payment-account-manager\Server\obj\Debug\Server.Migrations.AddMonthlyFeeDateMigration.resources

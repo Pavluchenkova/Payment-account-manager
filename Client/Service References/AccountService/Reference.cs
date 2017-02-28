@@ -38,6 +38,9 @@ namespace Client.AccountService {
         private System.DateTime ModificationDateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime MonthlyFeeDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -123,6 +126,19 @@ namespace Client.AccountService {
                 if ((this.ModificationDateField.Equals(value) != true)) {
                     this.ModificationDateField = value;
                     this.RaisePropertyChanged("ModificationDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime MonthlyFeeDate {
+            get {
+                return this.MonthlyFeeDateField;
+            }
+            set {
+                if ((this.MonthlyFeeDateField.Equals(value) != true)) {
+                    this.MonthlyFeeDateField = value;
+                    this.RaisePropertyChanged("MonthlyFeeDate");
                 }
             }
         }
@@ -217,6 +233,12 @@ namespace Client.AccountService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAccountService/Update", ReplyAction="http://tempuri.org/IAccountService/UpdateResponse")]
         System.Threading.Tasks.Task UpdateAsync(Client.AccountService.UserDto userDto);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAccountService/MonthlyFee", ReplyAction="http://tempuri.org/IAccountService/MonthlyFeeResponse")]
+        void MonthlyFee();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAccountService/MonthlyFee", ReplyAction="http://tempuri.org/IAccountService/MonthlyFeeResponse")]
+        System.Threading.Tasks.Task MonthlyFeeAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -260,6 +282,14 @@ namespace Client.AccountService {
         
         public System.Threading.Tasks.Task UpdateAsync(Client.AccountService.UserDto userDto) {
             return base.Channel.UpdateAsync(userDto);
+        }
+        
+        public void MonthlyFee() {
+            base.Channel.MonthlyFee();
+        }
+        
+        public System.Threading.Tasks.Task MonthlyFeeAsync() {
+            return base.Channel.MonthlyFeeAsync();
         }
     }
 }

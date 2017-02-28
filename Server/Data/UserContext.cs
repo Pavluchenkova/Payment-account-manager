@@ -8,7 +8,7 @@ using Server.Data;
 
 namespace Server
 {
-   public  class UserContext : DbContext
+    public class UserContext : DbContext
     {
         static UserContext()
         {
@@ -16,7 +16,7 @@ namespace Server
         }
         public UserContext()
             : base("DbConnection")
-        {}
+        { }
 
         public DbSet<User> Users { get; set; }
         public DbSet<UserHistory> UserHistories { get; set; }

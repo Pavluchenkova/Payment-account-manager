@@ -44,6 +44,8 @@
             this.labelNotes = new System.Windows.Forms.Label();
             this.labelModificationdate = new System.Windows.Forms.Label();
             this.SaveChanges = new System.Windows.Forms.Button();
+            this.labelMonthlyFeeDate = new System.Windows.Forms.Label();
+            this.MonthlyFeeDate = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // AccountNumber
@@ -174,7 +176,7 @@
             // SaveChanges
             // 
             this.SaveChanges.Enabled = false;
-            this.SaveChanges.Location = new System.Drawing.Point(179, 270);
+            this.SaveChanges.Location = new System.Drawing.Point(181, 282);
             this.SaveChanges.Name = "SaveChanges";
             this.SaveChanges.Size = new System.Drawing.Size(75, 23);
             this.SaveChanges.TabIndex = 16;
@@ -182,11 +184,30 @@
             this.SaveChanges.UseVisualStyleBackColor = true;
             this.SaveChanges.Click += new System.EventHandler(this.SaveChanges_Click);
             // 
+            // labelMonthlyFeeDate
+            // 
+            this.labelMonthlyFeeDate.AutoSize = true;
+            this.labelMonthlyFeeDate.Location = new System.Drawing.Point(28, 259);
+            this.labelMonthlyFeeDate.Name = "labelMonthlyFeeDate";
+            this.labelMonthlyFeeDate.Size = new System.Drawing.Size(86, 13);
+            this.labelMonthlyFeeDate.TabIndex = 17;
+            this.labelMonthlyFeeDate.Text = "Monthly fee date";
+            // 
+            // MonthlyFeeDate
+            // 
+            this.MonthlyFeeDate.Location = new System.Drawing.Point(134, 256);
+            this.MonthlyFeeDate.Name = "MonthlyFeeDate";
+            this.MonthlyFeeDate.ReadOnly = true;
+            this.MonthlyFeeDate.Size = new System.Drawing.Size(121, 20);
+            this.MonthlyFeeDate.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(313, 311);
+            this.Controls.Add(this.MonthlyFeeDate);
+            this.Controls.Add(this.labelMonthlyFeeDate);
             this.Controls.Add(this.SaveChanges);
             this.Controls.Add(this.labelModificationdate);
             this.Controls.Add(this.labelNotes);
@@ -228,6 +249,8 @@
         private System.Windows.Forms.Label labelNotes;
         private System.Windows.Forms.Label labelModificationdate;
         private System.Windows.Forms.Button SaveChanges;
+        private System.Windows.Forms.Label labelMonthlyFeeDate;
+        private System.Windows.Forms.TextBox MonthlyFeeDate;
     }
 }
 

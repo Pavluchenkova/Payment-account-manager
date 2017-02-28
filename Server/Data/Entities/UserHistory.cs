@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Server
 {
-   public class UserHistory
+    public class UserHistory
     {
         public Guid UserHistoryId { get; set; }
         public string Name { get; set; }
@@ -17,6 +17,7 @@ namespace Server
         public DateTime ModificationDate { get; set; }
         public DateTime ValidTillDate { get; set; }
         public DateTime IncomeDate { get; set; }
+        public DateTime MonthlyFeeDate { get; set; }
         public string Notes { get; set; }
 
         public Guid UserId { get; set; }

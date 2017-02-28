@@ -16,5 +16,8 @@ namespace Server.Interfaces
 
         [OperationContract]
         void Update(UserDto userDto);
+
+        [OperationContract]
+        void MonthlyFee();
     }
 }

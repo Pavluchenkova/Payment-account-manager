@@ -58,6 +58,15 @@
     <Compile Include="AccountService\UserDto.cs" />
     <Compile Include="Data\UserContextInitialiser.cs" />
     <Compile Include="Interfaces\IAccountService.cs" />
+    <Compile Include="Migrations\201702261359131_InitialCreate.cs" />
+    <Compile Include="Migrations\201702261359131_InitialCreate.Designer.cs">
+      <DependentUpon>201702261359131_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702281039437_AddMonthlyFeeDateMigration.cs" />
+    <Compile Include="Migrations\201702281039437_AddMonthlyFeeDateMigration.Designer.cs">
+      <DependentUpon>201702281039437_AddMonthlyFeeDateMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Data\Entities\User.cs" />
@@ -69,7 +78,17 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702261359131_InitialCreate.resx">
+      <DependentUpon>201702261359131_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702281039437_AddMonthlyFeeDateMigration.resx">
+      <DependentUpon>201702281039437_AddMonthlyFeeDateMigration.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

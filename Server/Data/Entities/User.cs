@@ -17,6 +17,7 @@ namespace Server
         public DateTime ModificationDate { get; set; }
         public DateTime ValidTillDate { get; set; }
         public DateTime IncomeDate { get; set; }
+        public DateTime MonthlyFeeDate { get; set; } 
         public string Notes { get; set; }
 
         public IList<UserHistory> UserHistories { get; set; }

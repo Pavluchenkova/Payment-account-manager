@@ -21,7 +21,8 @@ namespace MonthlyFeeTask
             catch (FaultException ex)
             {
                 Console.WriteLine(ex.Message);
-            }            
+                Console.ReadKey();
+            }
         }
     }
 }

@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.ServiceModel;
 using System.Runtime.Serialization;
 
 namespace Server.AccountService
 {
-   [DataContract]
-   public class UserDto
+    [DataContract]
+    public class UserDto
     {
         [DataMember]
         public Guid UserId { get; set; }

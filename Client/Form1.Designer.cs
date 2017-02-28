@@ -50,15 +50,15 @@
             // 
             // AccountNumber
             // 
-            this.AccountNumber.Location = new System.Drawing.Point(133, 12);
+            this.AccountNumber.Location = new System.Drawing.Point(133, 26);
             this.AccountNumber.Name = "AccountNumber";
-            this.AccountNumber.Size = new System.Drawing.Size(123, 20);
+            this.AccountNumber.Size = new System.Drawing.Size(121, 20);
             this.AccountNumber.TabIndex = 0;
             // 
             // labelAccountNumber
             // 
             this.labelAccountNumber.AutoSize = true;
-            this.labelAccountNumber.Location = new System.Drawing.Point(28, 15);
+            this.labelAccountNumber.Location = new System.Drawing.Point(28, 29);
             this.labelAccountNumber.Name = "labelAccountNumber";
             this.labelAccountNumber.Size = new System.Drawing.Size(85, 13);
             this.labelAccountNumber.TabIndex = 1;
@@ -67,11 +67,11 @@
             // SearchByAccountNumber
             // 
             this.SearchByAccountNumber.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.SearchByAccountNumber.Location = new System.Drawing.Point(180, 47);
+            this.SearchByAccountNumber.Location = new System.Drawing.Point(179, 52);
             this.SearchByAccountNumber.Name = "SearchByAccountNumber";
             this.SearchByAccountNumber.Size = new System.Drawing.Size(75, 23);
             this.SearchByAccountNumber.TabIndex = 2;
-            this.SearchByAccountNumber.Text = "OK";
+            this.SearchByAccountNumber.Text = "Search";
             this.SearchByAccountNumber.UseVisualStyleBackColor = true;
             this.SearchByAccountNumber.Click += new System.EventHandler(this.SearchByAccountNumber_Click);
             // 
@@ -79,44 +79,44 @@
             // 
             this.UserName.Location = new System.Drawing.Point(133, 93);
             this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(122, 20);
+            this.UserName.Size = new System.Drawing.Size(121, 20);
             this.UserName.TabIndex = 3;
             // 
             // Balance
             // 
-            this.Balance.Location = new System.Drawing.Point(133, 127);
+            this.Balance.Location = new System.Drawing.Point(133, 145);
             this.Balance.Name = "Balance";
-            this.Balance.Size = new System.Drawing.Size(122, 20);
+            this.Balance.Size = new System.Drawing.Size(121, 20);
             this.Balance.TabIndex = 5;
             // 
             // ValidationDate
             // 
-            this.ValidationDate.Location = new System.Drawing.Point(133, 153);
+            this.ValidationDate.Location = new System.Drawing.Point(133, 171);
             this.ValidationDate.Name = "ValidationDate";
             this.ValidationDate.ReadOnly = true;
-            this.ValidationDate.Size = new System.Drawing.Size(122, 20);
+            this.ValidationDate.Size = new System.Drawing.Size(121, 20);
             this.ValidationDate.TabIndex = 6;
             // 
             // Phone
             // 
-            this.Phone.Location = new System.Drawing.Point(133, 177);
+            this.Phone.Location = new System.Drawing.Point(133, 119);
             this.Phone.Name = "Phone";
-            this.Phone.Size = new System.Drawing.Size(122, 20);
+            this.Phone.Size = new System.Drawing.Size(121, 20);
             this.Phone.TabIndex = 7;
             // 
             // Notes
             // 
-            this.Notes.Location = new System.Drawing.Point(133, 203);
+            this.Notes.Location = new System.Drawing.Point(133, 249);
             this.Notes.Name = "Notes";
-            this.Notes.Size = new System.Drawing.Size(122, 20);
+            this.Notes.Size = new System.Drawing.Size(121, 20);
             this.Notes.TabIndex = 8;
             // 
             // ModificationDate
             // 
-            this.ModificationDate.Location = new System.Drawing.Point(134, 229);
+            this.ModificationDate.Location = new System.Drawing.Point(133, 223);
             this.ModificationDate.Name = "ModificationDate";
             this.ModificationDate.ReadOnly = true;
-            this.ModificationDate.Size = new System.Drawing.Size(122, 20);
+            this.ModificationDate.Size = new System.Drawing.Size(121, 20);
             this.ModificationDate.TabIndex = 9;
             // 
             // labelName
@@ -131,7 +131,7 @@
             // labelBalance
             // 
             this.labelBalance.AutoSize = true;
-            this.labelBalance.Location = new System.Drawing.Point(28, 130);
+            this.labelBalance.Location = new System.Drawing.Point(28, 148);
             this.labelBalance.Name = "labelBalance";
             this.labelBalance.Size = new System.Drawing.Size(46, 13);
             this.labelBalance.TabIndex = 11;
@@ -140,7 +140,7 @@
             // labelValidTillDate
             // 
             this.labelValidTillDate.AutoSize = true;
-            this.labelValidTillDate.Location = new System.Drawing.Point(28, 156);
+            this.labelValidTillDate.Location = new System.Drawing.Point(28, 174);
             this.labelValidTillDate.Name = "labelValidTillDate";
             this.labelValidTillDate.Size = new System.Drawing.Size(51, 13);
             this.labelValidTillDate.TabIndex = 12;
@@ -149,7 +149,7 @@
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
-            this.labelPhone.Location = new System.Drawing.Point(28, 180);
+            this.labelPhone.Location = new System.Drawing.Point(28, 122);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(38, 13);
             this.labelPhone.TabIndex = 13;
@@ -158,7 +158,7 @@
             // labelNotes
             // 
             this.labelNotes.AutoSize = true;
-            this.labelNotes.Location = new System.Drawing.Point(28, 206);
+            this.labelNotes.Location = new System.Drawing.Point(28, 252);
             this.labelNotes.Name = "labelNotes";
             this.labelNotes.Size = new System.Drawing.Size(35, 13);
             this.labelNotes.TabIndex = 14;
@@ -167,7 +167,7 @@
             // labelModificationdate
             // 
             this.labelModificationdate.AutoSize = true;
-            this.labelModificationdate.Location = new System.Drawing.Point(28, 232);
+            this.labelModificationdate.Location = new System.Drawing.Point(28, 226);
             this.labelModificationdate.Name = "labelModificationdate";
             this.labelModificationdate.Size = new System.Drawing.Size(65, 13);
             this.labelModificationdate.TabIndex = 15;
@@ -176,7 +176,7 @@
             // SaveChanges
             // 
             this.SaveChanges.Enabled = false;
-            this.SaveChanges.Location = new System.Drawing.Point(181, 282);
+            this.SaveChanges.Location = new System.Drawing.Point(179, 275);
             this.SaveChanges.Name = "SaveChanges";
             this.SaveChanges.Size = new System.Drawing.Size(75, 23);
             this.SaveChanges.TabIndex = 16;
@@ -187,7 +187,7 @@
             // labelMonthlyFeeDate
             // 
             this.labelMonthlyFeeDate.AutoSize = true;
-            this.labelMonthlyFeeDate.Location = new System.Drawing.Point(28, 259);
+            this.labelMonthlyFeeDate.Location = new System.Drawing.Point(28, 200);
             this.labelMonthlyFeeDate.Name = "labelMonthlyFeeDate";
             this.labelMonthlyFeeDate.Size = new System.Drawing.Size(86, 13);
             this.labelMonthlyFeeDate.TabIndex = 17;
@@ -195,7 +195,7 @@
             // 
             // MonthlyFeeDate
             // 
-            this.MonthlyFeeDate.Location = new System.Drawing.Point(134, 256);
+            this.MonthlyFeeDate.Location = new System.Drawing.Point(133, 197);
             this.MonthlyFeeDate.Name = "MonthlyFeeDate";
             this.MonthlyFeeDate.ReadOnly = true;
             this.MonthlyFeeDate.Size = new System.Drawing.Size(121, 20);
@@ -205,7 +205,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 311);
+            this.ClientSize = new System.Drawing.Size(285, 310);
             this.Controls.Add(this.MonthlyFeeDate);
             this.Controls.Add(this.labelMonthlyFeeDate);
             this.Controls.Add(this.SaveChanges);
@@ -224,6 +224,8 @@
             this.Controls.Add(this.SearchByAccountNumber);
             this.Controls.Add(this.labelAccountNumber);
             this.Controls.Add(this.AccountNumber);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Account Manager";
             this.ResumeLayout(false);

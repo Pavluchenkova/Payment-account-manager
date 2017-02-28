@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using Server.Data;
 
 namespace Server
@@ -14,6 +9,7 @@ namespace Server
         {
             Database.SetInitializer<UserContext>(new UserContextInitialiser());
         }
+
         public UserContext()
             : base("DbConnection")
         { }

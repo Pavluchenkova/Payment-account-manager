@@ -13,18 +13,21 @@ namespace Server.Repositories
         {
             _dbContext = new UserContext();
         }
+
         public User GetByAccountNumber(int accountNumber)
         {
             var entity = _dbContext.Set<User>().FirstOrDefault(e => e.AccountNumber == accountNumber);
 
             return entity;
         }
+
         public User GetById(Guid userId)
         {
             var entity = _dbContext.Set<User>().FirstOrDefault(e => e.UserId == userId);
 
             return entity;
         }
+
         public IEnumerable<User> GetUsersForMonthlyFee()
         {
             var currentDay = DateTime.Now;
@@ -54,6 +57,5 @@ namespace Server.Repositories
             _dbContext.Entry(entity).State = EntityState.Modified;
             _dbContext.SaveChanges();
         }
-
     }
 }

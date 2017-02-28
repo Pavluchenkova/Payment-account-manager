@@ -7,8 +7,8 @@ namespace Server.AccountService
 {
     public class AccountService : IAccountService
     {
-        private readonly UserRepository _userRpository;   
-        private  readonly decimal _withdrawal = 15;
+        private readonly UserRepository _userRpository;
+        private readonly decimal _withdrawal = 15;
 
         public AccountService()
         {
@@ -18,11 +18,11 @@ namespace Server.AccountService
         public UserDto GetByAccountNumber(int accountNumber)
         {
             User user = _userRpository.GetByAccountNumber(accountNumber);
-
             if (user == null)
             {
                 return null;
             }
+
             UserDto userDto = new UserDto
             {
                 AccountNumber = user.AccountNumber,
@@ -47,6 +47,7 @@ namespace Server.AccountService
             {
                 throw new InvalidOperationException("User not found");
             }
+
             user.Balance = userDto.Balance;
             user.IncomeDate = userDto.IncomeDate;
             user.Name = userDto.Name;
@@ -59,17 +60,16 @@ namespace Server.AccountService
         public void MonthlyFee()
         {
             IEnumerable<User> selectedUsers = _userRpository.GetUsersForMonthlyFee();
+
             foreach (var user in selectedUsers)
             {
-
                 if (user.Balance > 0)
                 {
                     user.Balance -= _withdrawal;
                     user.MonthlyFeeDate = user.MonthlyFeeDate.AddMonths(1);
+                    _userRpository.Update(user);
                 }
-                _userRpository.Update(user);
             }
         }
-
     }
 }

@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Server.AccountService;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 
@@ -16,6 +11,7 @@ namespace Server
             Type serviceType = typeof(AccountService.AccountService);
             Uri serviceUri = new Uri("http://localhost:8080/");
             ServiceHost host = new ServiceHost(serviceType, serviceUri);
+
             host.AddDefaultEndpoints();
             ServiceMetadataBehavior behavior = new ServiceMetadataBehavior();
             host.Description.Behaviors.Add(behavior);
@@ -23,7 +19,9 @@ namespace Server
                 typeof(IMetadataExchange),
                 MetadataExchangeBindings.CreateMexHttpBinding(),
               "http://localhost:8080/mex");
+
             host.Open();
+
             Console.WriteLine("Server started. Press any key to exit.");
             Console.ReadKey();
         }
